@@ -11,16 +11,16 @@ qt5-qtbase-devel, sqlite-devel, zlib-devel.
 Пункты 1.x выполняются один раз на новой системе либо при желании обновить
 инструментарий.
 1.1 Создаём каталог, где всё будет, чтобы не забивать домашнюю директорию
-    mkdir mapsme
-    cd mapsme
+    mkdir OrganicMaps
+    cd OrganicMaps
 
 1.2 Клонируем репозиторий. Он займёт ~4ГБ места.
-    git clone --recurse-submodules -j8 https://github.com/mapsme/omim.git
+    git clone --recurse-submodules -j8 https://github.com/organicmaps/organicmaps.git
 В старых версиях git нет параметров -j и --shallow-submodules, так что их можно убрать, если не клонируется.
 
 1.3 Версия сборочного инструментария должна строго совпадать с версией программы, под которую
 собираем карты. Например, если программа версии 10.0.3, то надо перейти в ветку release-101
-    cd omim
+    cd organicmaps
     git checkout release-101
 
 1.4 Собираем необходимые бинарники. В зависимост от мощности CPU процесс может затянуться.
